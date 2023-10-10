@@ -72,6 +72,7 @@
     box-shadow: 20px;
 }
 
+/* SIDEBAR */
 
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
@@ -101,6 +102,41 @@
     margin:0;
 }
 
+/* MAIN CONTENT */
+
 .main {
     grid-area: 2 / 2 / 3 / 3;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30px 1fr 30px 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.projectsTitle-main {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.announcementsTitle-main {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trendingTitle-main {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.projects-main {
+    grid-area: 2 / 1 / 5 / 2;
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card-projects {
+    background-color:bisque;
+    border-radius: 15px;
+}
+
+.card-projects:hover {
+    border-style:outset;
 }
